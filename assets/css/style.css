@@ -1,0 +1,82 @@
+/* estilos generales */ 
+
+@font-face {
+    font-family: avenir;
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+body {
+    background: #182226;
+    font-family: avenir, helvetica, arial;
+    color: #f0f0f0;
+}
+
+li {
+    list-style: none;
+}
+
+/* estilo imagen header */
+
+#header_image_container {
+    background: url('../img/background.jpg');
+    position: relative;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 0;
+}
+
+#header_image_container > div {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    color: #182226;
+}
+
+/* estilo icono menu */
+
+#main_logo {
+    padding: 0.5em 1em;
+}
+
+#main_logo > img {
+    width: 1.7em;
+    margin-right: 0.5em;
+}
+
+/* estilo filas */
+
+.filas {
+    text-align: center;
+    margin: 3em 0 0 0;
+    padding: 0;
+}
+
+#fila_a {
+    text-align: left;
+}
+
+/* estilo paneles oscuros */
+
+.panel_dark, .list_item_dark {
+    border: 0;
+    background: #2F383C;
+}
+
+.panel_dark > .panel-heading {
+    color: #f0f0f0;
+    background: #131B1E;
+    border: 0;
+}
+
+/* estilo color footer */
+
+#my_footer {
+    background: #2F383C;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    #header_image_container {
+        height: 20em!important;
+    }
+}
